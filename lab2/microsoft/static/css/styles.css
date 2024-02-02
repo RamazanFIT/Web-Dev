@@ -1,0 +1,195 @@
+body{
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+#setting-the-size{
+    width: 108px;
+}
+
+.utd-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.do-beauty{
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    color:#000;
+    font-size: 13px;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.do-beauty:hover{
+    border-bottom: 2px solid #000;
+}
+
+.do-the-best{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right:-70px;
+}
+
+.support-so-on-left{
+    position: relative;
+    top: -12px;
+    right:21px;
+}
+
+.setting-the-size-add{
+    height: 36px;
+    position: relative;
+    top:13px;
+    left:-15px;
+}
+
+.support-so-on-right{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:-48px;
+    left:1070px;
+}
+
+.join-to{
+    position: relative;
+    top: -14px;
+    left: -38px;
+    padding-left:13px;
+}
+
+.set-the-row{
+    position: relative;
+    top: -8px;
+    left: 35px;
+}
+
+.first-part{
+    position: relative;
+    top: 10px;
+}
+
+.resize-phon{
+    width: 100%;
+}
+
+.dev-for-life{
+    font-size: 2.3125rem;
+    color: #fff;
+    text-align: left;
+    width: 450px;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.next-step-of-life{
+    color:white;
+    text-align: left;
+    width: 450px;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+
+.check-check{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: #0067b8;
+    color: #fff;
+    font-weight: 600;
+    border: .125rem solid transparent;
+    position: relative;
+    border-radius: .125rem;
+    text-decoration: none;
+    padding: .625rem .75rem;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.check-check:hover{
+    background-color: #015aa3;
+}
+
+.check-check:active{
+    border: 3px dotted #ffffff;
+}
+
+.move-the-next-step{
+    position: relative;
+    top: -380px;
+    right: -120px;
+}
+
+.second-part{
+    position: relative;
+    top: -40px;
+}
+
+.change-f-logo{
+    z-index: 1;
+    width: 22%;
+    position: relative;
+    top:-300px;
+}
+
+.the-name-of-app-change{
+    z-index: 100;
+    font-size: 1.8125rem;
+    margin-bottom: 1rem;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.the-bio-of-app-change{
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    color: #000;
+    width: 282px;
+}
+
+.the-link-to-app-change{
+    padding-right: 1.6875em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #0067b8;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: none;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.the-link-to-app-change:hover{
+    border-bottom: 1px solid #0067b8;
+    padding-right: 0px;
+}
+
+.the-first-app{
+    position: relative;
+    top: -310px;
+    right: auto;
+}
+
+.third-part{
+    position: relative;
+    top: 15px;
+    right: -70px;
+}
+
+.fourth-part{
+    position: relative;
+    top: -363.5px;
+    right: -410px;
+}
+
+.fifth-part{
+    position: relative;
+    top: -742px;
+    right: -750px;
+}
+
+.sixth-part{
+    position: relative;
+    top: -1081.98px;
+    right: -1090px;
+}
