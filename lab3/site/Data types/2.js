@@ -1,0 +1,4 @@
+/*
+  /* nested comment ?!? ;) 
+*/
+alert( 'World' );

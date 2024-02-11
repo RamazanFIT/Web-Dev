@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert( 1 && 2 && 3 ); // 3, the last one
+        if(null || undefined){
+            alert(0);
+        }
+        if(undefined){
+            alert(0);
+        }
+        let hour = 12;
+        let isWeekend = false;
+
+        if (hour < 10 || hour > 18 || isWeekend) {
+        alert( 'The office is closed.' ); // it is the weekend
+        }
+        alert(0 || 0 || null || undefined)
+
+        alert( true && true );   // true
+        alert( false && true );  // false
+        alert( true && false );  // false
+        alert( false && false ); // false
+        hour = 12;
+        let minute = 30;
+
+        if (hour == 12 && minute == 30) {
+            alert( 'The time is 12:30' );
+        }
+        if (1 && 0) { // evaluated as true && false
+            alert( "won't work, because the result is falsy" );
+        }
+        result = value1 && value2 && value3;
+        // if the first operand is truthy,
+        // AND returns the second operand:
+        alert( 1 && 0 ); // 0
+        alert( 1 && 5 ); // 5
+
+        // if the first operand is falsy,
+        // AND returns it. The second operand is ignored
+        alert( null && 5 ); // null
+        alert( 0 && "no matter what" ); // 0
+        alert( 1 && 2 && null && 3 ); // null
+        alert( 1 && 2 && 3 ); // 3, the last one
+        let x = 1;
+
+        (x > 0) && alert( 'Greater than zero!' );
+        x = 1;
+
+        if (x > 0) alert( 'Greater than zero!' );
+        alert( !true ); // false
+        alert( !0 ); // true
+        alert( !!"non-empty string" ); // true
+        alert( !!null ); // false
+        alert( Boolean("non-empty string") ); // true
+        alert( Boolean(null) ); // false
+
+        alert( null || 2 || undefined );
+
+        alert( alert(1) || 2 || alert(3) );
+
+        alert(1 && null && 2);
+
+        alert( alert(1) && alert(2) );
+
+        alert( null || 2 && 3 || 4 );
+
+        if (age >= 14 && age <= 90){
+
+        }
+
+        if (!(age >= 14 && age <= 90)){
+
+        }
+
+        // Runs.
+        // The result of -1 || 0 = -1, truthy
+        if (-1 || 0) alert( 'first' );
+
+        // Doesn't run
+        // -1 && 0 = 0, falsy
+        if (-1 && 0) alert( 'second' );
+
+        // Executes
+        // Operator && has a higher precedence than ||
+        // so -1 && 1 executes first, giving us the chain:
+        // null || -1 && 1  ->  null || 1  ->  1
+        if (null || -1 && 1) alert( 'third' );
+    </script>
+</body>
+</html>

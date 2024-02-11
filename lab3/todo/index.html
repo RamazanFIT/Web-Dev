@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="nav">
+        <h2 class="move-right">ToDo List </h2>
+    </div>
+        
+    <div class="move-all">
+
+        <div class="label">
+            <div class="nav-to-do">
+                <h1 class="nav-to-do">ToDo List </h1>
+            </div>
+        </div>
+
+        <div class="input-place">
+            <form action="" onsubmit="createTheTask(); return false;">
+                <input type="text" name="someTask" placeholder="New Task" id="someTask" >
+                <input type="button" value="Add" onclick="createTheTask()" id="button-add">
+            </form>
+        </div>
+
+        <div class="matrix">
+            <ul id="listOfTask">
+            </ul>
+        </div>
+    </div>
+    
+      
+
+    <script src="static/js/node.js"></script>
+</body>
+</html>

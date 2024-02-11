@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List App</title>
+  <style>
+    /* Простой стиль для визуального улучшения */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .Give{
+        background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ToDo List</h1>
+
+  <!-- Форма для добавления новых задач -->
+  <form id="todoForm">
+    <input type="text" id="newTodo" placeholder="Add a new item" required>
+    <button type="button" onclick="addTodo()">Add</button>
+  </form>
+
+  <!-- Список задач -->
+  <ul id="todoList"></ul>
+
+  <script>
+    // Функция для добавления новой задачи
+    function addTodo() {
+      // Получаем значение из поля ввода
+      var newTodoText = document.getElementById("newTodo").value;
+
+      if (newTodoText.length !== 0) {
+        // Создаем новый элемент списка
+        var listItem = document.createElement("li");
+        // Создаем чекбокс для отметки "сделано"
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+
+        // Создаем текстовый узел с содержанием новой задачи
+       // var textNode = document.createTextNode(newTodoText);
+        var textNode = document.createElement("p");
+        textNode.textContent = newTodoText;
+        // Создаем кнопку для удаления задачи
+        var deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.onclick = function(){
+          listItem.remove();
+        };
+       
+
+
+        // Добавляем чекбокс, текст и кнопку в элемент списка
+        listItem.appendChild(checkbox);
+        listItem.appendChild(textNode);
+        listItem.appendChild(deleteButton);
+        listItem.className = "Give";
+        // Добавляем элемент списка в список задач
+        document.getElementById("todoList").append(listItem);
+
+        // Очищаем поле ввода
+        document.getElementById("newTodo").value = "";
+
+      }
+    }
+  </script>
+
+</body>
+</html>

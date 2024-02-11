@@ -1,0 +1,96 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Arial", sans-serif;
+}
+
+
+.nav{
+    position: relative;
+    left:-8px;
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    color:rgb(66, 66, 66);
+    align-items: left;
+    height: 60px;
+    width: 100%;
+    top: -10px;
+    margin:0;
+}
+
+.delete-button{
+    position: absolute;
+    height: 20px;
+    width: auto;
+    margin-left: 10px;
+    top:15px;
+    right: 10px;
+
+}
+
+.li-change{
+    
+}
+
+.nav-to-do{
+    font-weight: lighter;
+}
+
+#someTask{
+    height: 30px;
+    margin-right: 16px;
+    width: 50%;
+}
+#button-add{
+    height: 36px;
+    width: 45px;
+    background-color: rgb(39, 123, 187);
+    color: aliceblue;
+    border-radius: 4px;
+    border-color: black;
+}
+.li-change{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right:46px;
+    border: 1px solid #d0d0d0;
+    margin-top: 0px;
+    width: 63%;
+}
+
+.checkbox-change{
+    margin-left: 10px;
+}
+
+.dataData-change{
+    margin-left: 30px;
+    overflow-x: scroll;
+}
+.input-place{
+    position: relative;
+    right:-67px;
+}
+
+#listOfTask{
+    margin-top:30px
+}
+
+.move-all{
+    position: relative;
+    top: 10%;
+    left:20%
+}
+
+.move-right{
+    position: relative;
+    right:-5%;
+    top:-2%;
+}
+
+.checkbox-change:checked + .dataData-change {
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
