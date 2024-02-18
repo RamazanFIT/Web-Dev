@@ -20,6 +20,7 @@ let student = {
 
 let json = JSON.stringify(student);
 
+
 alert(typeof json); // we've got a string!
 
 alert(json);
