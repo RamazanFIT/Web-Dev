@@ -8,7 +8,7 @@ export interface Product {
   rate: number;
 }
 
-export const products = [
+export const products: Product[] = [
   {
     id: 1,
     name: 'Toaster Bosch TAT3P420',

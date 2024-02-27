@@ -1,0 +1,14 @@
+<h2>Products</h2>
+<app-category (categorySell)="getCat($event)"></app-category>
+<div id='products' *ngFor="let product of products">
+
+    <div *ngIf="!category || product.category === category">
+
+        <app-product-item
+
+                [product]="product"
+                (throwOutToParent)="deleteThat($event)"
+                (getLinkToProduct)="share($event)"
+        ></app-product-item>
+    </div>
+</div>

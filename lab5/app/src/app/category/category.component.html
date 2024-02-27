@@ -1,0 +1,17 @@
+<div *ngIf="flag === 0">
+    <button (click)="passInto()">Show Categories</button>
+</div>
+<div *ngIf="flag">
+    <button (click)="passInto()">Hide Categories</button>
+</div>
+<br>
+<div *ngIf="flag">
+    <div id="category-buttons" *ngFor="let category of categories">
+        <button type="button" (click)="selectCategory(category.name)">
+            {{ category.name }}
+        </button>
+    </div>
+</div>
+<br>
+
+

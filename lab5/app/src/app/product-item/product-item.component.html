@@ -1,0 +1,28 @@
+<div *ngIf="product">
+
+    <img class='product-image' src={{product.image}}>
+    <div id="descr">
+        <h3 class='products-overall-desc'>
+            <a [title]="product.name + ' details'" href={{product.url}}>
+                {{ product.name }}
+            </a>
+        </h3>
+        <p *ngIf="product.description">Description: {{ product.description }}</p>
+        <p *ngIf="product.price">Price: {{product.price}} ₸</p>
+        <p *ngIf="product.rate">Rating: {{ product.rate }}</p>
+
+        <p *ngIf="product.category">Category: {{ product.category }}</p>
+        <p *ngIf="product.likes">Likes: {{ product.likes }}</p>
+        <div class="to-best">
+            <button class="do-best" type="button" (click)="share(product.url)">Share</button>
+            <app-product-alerts class="do-best" [product]="product" (notify)="onNotify(12)"></app-product-alerts>
+            <button type="button" class="do-best" (click)="passLike()">Like</button>
+            <button type="button" class="do-best" (click)="deleteThat()">Delete</button>
+        </div>
+
+
+
+
+    </div>
+
+</div>

@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
     <button (click)="openTelegramWithLink()">Some Button</button>
   `,
 })
+
 export class ParentComponent {
   dataToSend = 'Hello from Parent!';
   receivedDataFromChild = '';
