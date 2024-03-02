@@ -13,9 +13,6 @@ import {ProductAlertsComponent} from "../product-alerts/product-alerts.component
   templateUrl: './product-item.component.html',
   styleUrl: './product-item.component.css'
 })
-
-
-
 export class ProductItemComponent {
   @Input() product : Product | undefined;
   @Output() throwOutToParent : EventEmitter<Product> = new EventEmitter<Product>();
@@ -32,12 +29,13 @@ export class ProductItemComponent {
 
   passLike() {
     if (this.product === undefined) return;
-      this.flag ^= 1;
-      if (this.flag) {
-        this.product.likes += 1;
-      } else {
-        this.product.likes -= 1;
-      }
+
+    this.flag ^= 1;
+    if (this.flag) {
+      this.product.likes += 1;
+    } else {
+      this.product.likes -= 1;
+    }
   }
 
   deleteThat(){
