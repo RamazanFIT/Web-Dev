@@ -1,0 +1,17 @@
+<body>
+
+
+    <ol>
+    {% for q in questions %}
+        <li> 
+            <a href="/polls/{{q.id}}/">
+
+                {{q.question_test}}
+            </a>
+        
+        </li>
+        
+    {% endfor %}
+    </ol>
+
+</body>

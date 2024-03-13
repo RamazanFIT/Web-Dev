@@ -8,6 +8,7 @@ import {Observable} from "rxjs";
 })
 export class AlbumsService {
 
+
   constructor(private client: HttpClient) { }
 
   linkAPI : string = 'http://127.0.0.1:8000/api/album/';
