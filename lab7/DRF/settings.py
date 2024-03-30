@@ -141,4 +141,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     
-ONLYUPPER = env('ONLYUPPER')
